@@ -4,7 +4,7 @@ body {
 .page-content {
 	width: 100%;
 	margin:  0 auto ;
-	background: #75e2e9;
+	
 	display: flex;
 	display: -webkit-flex;
 	justify-content: center;
@@ -17,10 +17,10 @@ body {
 	-ms-align-items: center;
 	-moz-align-items: center;
 	-webkit-align-items: center;
-	background-image: -moz-linear-gradient( 136deg, rgb(149,153,226) 0%, rgb(139,198,236) 100%);
-    background-image: -webkit-linear-gradient( 136deg, rgb(149,153,226) 0%, rgb(139,198,236) 100%);
-    background-image: -ms-linear-gradient( 136deg, rgb(149,153,226) 0%, rgb(139,198,236) 100%);
-}
+	/* background-image: -moz-linear-gradient( 136deg, #d95e89 0%, #d95e89 100%);
+    background-image: -webkit-linear-gradient( 136deg, #d95e89 0%, #d95e89 100%);
+    background-image: -ms-linear-gradient( 136deg, #d95e89 0%, #d95e89 100%); */
+} 
 .form-content  {
 	margin: 0 150px;
 	background: #fff;
@@ -37,7 +37,7 @@ body {
 	-webkit-box-shadow: 0px 8px 20px 0px rgba(0, 0, 0, 0.15);
 	margin: 35px 200px;
 	position: relative;
-	font-family: "EB Garamond", serif;
+	font-family: 'Montserrat', sans-serif;
 }
 .form-content .form-detail {
 	position: relative;
@@ -47,7 +47,7 @@ body {
 }
 .form-content .form-detail h2 {
 	font-weight: 500;
-	font-size: 40px;
+	font-size: 1.8rem;
 	margin-bottom: 34px;
 	padding: 33px 50px 0px 60px;
 }
@@ -58,7 +58,7 @@ body {
 	text-align: center;
 }
 .form-content .form-detail .form-main h2 {
-	color: #2271dd;
+	color: #9a057a;
 }
 
 .form-content .form-detail .form-group {
@@ -156,7 +156,7 @@ body {
     margin: 44px 0 10px;
 }
 .form-content .form-detail .form-main #register {
-	background: #fff;
+	background: #3d1053;
 	border-radius: 25px;
 	-o-border-radius: 25px;
 	-ms-border-radius: 25px;
@@ -171,12 +171,13 @@ body {
 	border: none;
 	margin: 6px 0 50px 0px;
 	cursor: pointer;
-	color: #333;
+	color: white;
 	font-weight: 700;
 	font-size: 15px;
+	transition: all 0.5s ease-out ;
 }
 .form-content .form-detail .form-main #register:hover {
-	background: #ccc;
+	background-color: #b91c97;
 }
 .form-content .form-detail .form-main .form-row-last input {
 	padding: 12.5px;
@@ -266,7 +267,34 @@ body {
 		padding-bottom: 50px;
 	}
 }
-@media screen and (max-width: 575px) {
+@media screen and (max-width: 600px){
+	.form-verticle h5{
+		padding-left: 50px !important;
+	}
+	.form-verticle hr{
+		margin-left: 36px !important;
+	}
+
+}
+@media screen and (max-width: 400px){
+	.right {
+		margin-right: 0% !important;}
+
+.left{
+	margin-right: 0% !important;
+}
+.verticle{
+	margin-left: 2% !important;
+}
+}
+
+ @media screen and (max-width: 575px) {
+	.form-content .form-detail h2 {
+	
+		font-size: 1.4rem;
+	
+	}
+
 	.form-content {
 		margin:  35px 50px;
 	}
@@ -305,6 +333,9 @@ body {
 		padding-left: 0;
 		text-align: center;
 	    margin: 44px 0 30px;
+	}
+	.verticle{
+font-size: 0.8rem;
 	}
 }
 
@@ -357,4 +388,8 @@ body {
 	display: flex;
 	font-family: 'Montserrat', sans-serif;
 
+}
+
+.right{
+	margin-right: 5%;
 }
