@@ -27,9 +27,10 @@ function submitForm(e) {
   var branch = getElementVal("branch");
   var phone = getElementVal("phone");
   var email = getElementVal("email");
-  var verticle = getElementVal("verticle");
+  // var verticle = getElementVal("verticle");
+  var verticle = checkValue()
 
-  console.log(name, scholar, branch, phone, email, verticle);
+  // console.log(name, scholar, branch, phone, email, verticle);
   saveMessages(name, scholar, branch, phone, email, verticle);
 
   //   enable alert
@@ -60,3 +61,14 @@ const saveMessages = (name, scholar, branch, phone, email, verticle) => {
 const getElementVal = (id) => {
   return document.getElementById(id).value;
 };
+
+
+
+const checkValue = () => {
+  var res = "";
+  var chck = document.querySelectorAll('input[type="checkbox"]:checked');
+  for (var ch of chck) {
+    res += ch.value + ", ";
+  }
+  return res;
+}
